@@ -16,7 +16,14 @@
     </header>
 
     <main>
-
+        <h1>Formulaire de connexion</h1>
+        <form action="connexion.php" method="POST">
+            <label for="login">Login :</label>
+            <input type="text" id="login" name="login" required>
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" name="password" required/>
+            <input type="submit" value="Connexion">
+        </form>
     </main>
 
     <footer>

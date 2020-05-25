@@ -16,7 +16,18 @@
     </header>
 
     <main>
-
+        <h1>Modifier son Profil</h1>
+        <form action="profil.php" method="POST">
+            <label for="login">Login :</label>
+            <input type="text" id="login" name="login">
+            <label for="old_password">Ancien mot de passe</label>
+            <input type="password" id="old_password" name="old_password" required/>
+            <label for="nw_password">Nouveau mot de passe: </label>
+            <input type="password" id="nw_password" name="nw_password"/>
+            <label for="conf_nwpassword">Nouveau mot de passe: </label>
+            <input type="password" id="conf_nwpassword" name="conf_nwpassword"/>         
+            <input type="submit" value="Modifier"/>       
+        </form>
     </main>
 
     <footer>
