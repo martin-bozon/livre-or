@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href=".css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Document</title>
 </head>
 <body>
@@ -15,9 +15,13 @@
         <h2><a href="commentaire.php">Commentaire</a>
     </header>
 
-    <main>
-        <p>Bonjour !</p>
-        <p>Inscris toi pour laisser un commentaire, que personne ne lira car on se fou de ton avis, mais c'est pour faire genre on t'écoute.</p>
+    <main id="main_index">
+        <section>
+            <h1>Bonjour !</h1>
+        </section>
+       <section>
+           <p>Inscris toi pour laisser un commentaire, que personne ne lira car on se fou de ton avis.</p>
+       </section>        
     </main>
 
     <footer>
