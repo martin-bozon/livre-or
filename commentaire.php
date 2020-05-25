@@ -16,7 +16,11 @@
     </header>
 
     <main>
-
+        <h1>Donne ton avis, même si on s'en fou.</h1>
+        <form action="commentaire.php" method="POST">
+            <label for="com">Commentaire :</label>
+            <input type="text" id="com" name="com" required/>
+        </form>
     </main>
 
     <footer>

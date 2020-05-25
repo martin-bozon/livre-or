@@ -16,7 +16,7 @@
     </header>
 
     <main>
-
+        <!-- Je sais pas encore comment structurer la page -->
     </main>
 
     <footer>
