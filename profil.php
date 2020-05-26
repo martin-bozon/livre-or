@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,18 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h2><a href="index.php">Accueil</a></h2>
-        <h2><a href="inscription.php">Inscription</a>
-        <h2><a href="connexion.php">Connexion</a></h2>
-        <h2><a href="profil.php">Profil</a></h2>
-        <h2><a href="livre-or.php">Livre d'or</a></h2>
-        <h2><a href="commentaire.php">Commentaire</a>
-    </header>
+    <?php  include 'include/header.php'; ?>
 
     <main>
         <h1>Modifier son Profil</h1>
-        <form action="profil.php" method="POST">
+        <form action="profil.php" method="POST" class="form_">
             <label for="login">Login :</label>
             <input type="text" id="login" name="login">
             <label for="old_password">Ancien mot de passe</label>

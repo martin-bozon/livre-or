@@ -1,7 +1,7 @@
 <?php
     if(isset($_SESSION["login"]))
         {
-            header("Location:inex.php");
+            header("Location:index.php");
         }
     else if(isset($_POST["validinsc"]))
         {
