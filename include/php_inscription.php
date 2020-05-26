@@ -23,16 +23,13 @@
                         }
                     else
                         {
-                            $msg_error = "Les mots de passe ne sont pas identiques."
-                        }
-                   
+                            $msg_error = "Les mots de passe ne sont pas identiques.";
+                        }                   
                 }
             else
                 {
-                    $msg_error = "OUPSI ! Ce login est déjà prit."
-                }
-
-
-           
+                    $msg_error = "OUPSI ! Ce login est déjà prit.";
+                }           
         }
+?>
     
