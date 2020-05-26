@@ -7,7 +7,7 @@ if(isset($_SESSION["login"]))
                 $commentaire = $_POST["com"];
                 $id_user = $_SESSION["id"];
                 $connexionbd = mysqli_connect("localhost" , "root" , "" , "livreor");
-                $requete_com = "INSERT INTO commentaires (commentaire, id_utilisateur, date) VALUES ('$commentaire', $id_user, NOW())";
+                $requete_com = "INSERT INTO commentaires (commentaire, id_utilisateur, date) VALUES ('$commentaire', $id_user, CUREDATE(DATE_FORMAT(date, '%d/%m/%Y')))";
                 $send_com = mysqli_query($connexionbd , $requete_com);
                 mysqli_close($connexionbd);
                 header("Location:livre-or.php");
