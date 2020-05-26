@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include 'include/php_connexion.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +26,19 @@
             <input type="text" id="login" name="login" required>
             <label for="password">Mot de passe:</label>
             <input type="password" id="password" name="password" required/>
-            <input type="submit" value="Connexion">
+            <input type="submit" value="Connexion" name="validcon">
+        <?php
+            if(isset($msg_error))
+                {
+        ?>
+                    <p class="msg_error">
+        <?php
+                    echo $msg_error;
+        ?>
+                    </p>
+        <?php
+                }
+        ?>
         </form>
     </main>
 
