@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php
+    session_start(); 
+    include 'include/php_commentaire.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,6 +17,7 @@
         <form action="commentaire.php" method="POST" class="form_">
             <label for="com">Commentaire :</label>
             <textarea rows="5" cols="33" id="com" name="com" required>Tu es une superbe personne... </textarea>
+            <input type="submit" value="Envoyer" name="send_com"/>
         </form>
     </main>
 

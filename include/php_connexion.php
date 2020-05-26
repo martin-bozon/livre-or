@@ -19,6 +19,8 @@
                             session_start();
                             $_SESSION["login"] = $info_user[0]["login"];
                             $_SESSION["mdp"] = $info_user[0]["password"];
+                            $_SESSION["id"] = $info_user[0]["id"];
+                            mysqli_close($connexionbd);
                             header("Location:index.php");
                         }
                     else
