@@ -24,7 +24,7 @@
             <input type="password" id="password" name="password" required/>
             <label for="confpassword">Confirmer le mot de passe :</label>
             <input type="password" id="confpassword" name="confpassword" required/>
-            <input type="submit" value="Inscription"/>
+            <input type="submit" value="Inscription" name="validinsc"/>
         </form>
     </main>
 
