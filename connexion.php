@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css"/>
-    <title>Document</title>
+    <title>Connexion</title>
 </head>
 <body>
     <?php  include 'include/header.php'; ?>
@@ -15,9 +15,9 @@
     <main>
         <h1>Formulaire de connexion</h1>
         <form action="connexion.php" method="POST" class="form_">
-            <label for="login">Login :</label>
+            <label for="login"><h3>Login :</h3></label>
             <input type="text" id="login" name="login" required>
-            <label for="password">Mot de passe:</label>
+            <label for="password"><h3>Mot de passe:</h3></label>
             <input type="password" id="password" name="password" required/>
             <input type="submit" value="Connexion" name="validcon">
         <?php

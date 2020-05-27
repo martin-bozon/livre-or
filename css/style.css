@@ -62,9 +62,22 @@ main
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        background-color: blue;
+        background-color: rgba(104, 39, 2, 0.411);
+        backdrop-filter: blur(4px);
         width: 25%;
         height: 50vh;
+    }
+#form_profil    
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgba(104, 39, 2, 0.411);
+        backdrop-filter: blur(4px);
+        width: 25%;
+        height: 75vh;
+        margin-bottom: 5vh;
     }
 #deco
     {
@@ -88,6 +101,10 @@ main
         height: 10%;
         width: 40vw;
         margin-right: 2vw;
+    }
+#lien_com:hover
+    {
+        color: rgb(104, 39, 2);
     }
 #espace_com
     {

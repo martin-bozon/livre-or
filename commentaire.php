@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css"/>
-    <title>Document</title>
+    <title>Commentaire</title>
 </head>
 <body>
     <?php  include 'include/header.php'; ?>
@@ -14,8 +14,8 @@
     <main>
         <h1>Donne ton avis, même si on s'en fou.</h1>
         <form action="commentaire.php" method="POST" class="form_">
-            <label for="com">Commentaire :</label>
-            <textarea rows="5" cols="33" id="com" name="com" required>Tu es une superbe personne... </textarea>
+            <label for="com"><h3>Commentaire :</h3></label>
+            <textarea rows="5" cols="33" id="com" name="com" required></textarea>
             <input type="submit" value="Envoyer" name="send_com"/>
             <?php
                  include 'include/php_commentaire.php';

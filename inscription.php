@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css"/>
-    <title>Document</title>
+    <title>Inscription</title>
 </head>
 <body>
     <?php  include 'include/header.php'; ?>
@@ -15,11 +15,11 @@
     <main>
         <h1>Formulaire d'inscription</h1>
         <form action="inscription.php" method="POST" class="form_">
-            <label for="login">Login :</label>
+            <label for="login"><h3>Login :</h3></label>
             <input type="text" id="login" name="login" required/>
-            <label for="password">Mot de passe :</label>
+            <label for="password"><h3>Mot de passe :</h3></label>
             <input type="password" id="password" name="password" required/>
-            <label for="confpassword">Confirmer le mot de passe :</label>
+            <label for="confpassword"><h3>Confirmer le mot de passe :</h3></label>
             <input type="password" id="confpassword" name="confpassword" required/>
             <input type="submit" value="Inscription" name="validinsc"/>
         <?php
