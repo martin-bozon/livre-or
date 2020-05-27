@@ -14,25 +14,28 @@
 
     <main>
         <h1>Formulaire de connexion</h1>
-        <form action="connexion.php" method="POST" class="form_">
-            <label for="login"><h3>Login :</h3></label>
-            <input type="text" id="login" name="login" required>
-            <label for="password"><h3>Mot de passe:</h3></label>
-            <input type="password" id="password" name="password" required/>
-            <input type="submit" value="Connexion" name="validcon">
-        <?php
-            if(isset($msg_error))
-                {
-        ?>
-                    <p class="msg_error">
-        <?php
-                    echo $msg_error;
-        ?>
-                    </p>
-        <?php
-                }
-        ?>
-        </form>
+        <section class="formulaire">
+            <form action="connexion.php" method="POST" id="form_connexion">
+                <label for="login"><h3>Login :</h3></label>
+                <input type="text" id="login" name="login" required>
+                <label for="password"><h3>Mot de passe:</h3></label>
+                <input type="password" id="password" name="password" required/>
+                <input type="submit" value="Connexion" name="validcon">
+            <?php
+                if(isset($msg_error))
+                    {
+            ?>
+                        <p class="msg_error">
+            <?php
+                        echo $msg_error;
+            ?>
+                        </p>
+            <?php
+                    }
+            ?>
+            </form>
+        </section>
+        
     </main>
 
     <footer>

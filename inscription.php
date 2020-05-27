@@ -14,27 +14,30 @@
 
     <main>
         <h1>Formulaire d'inscription</h1>
-        <form action="inscription.php" method="POST" class="form_">
-            <label for="login"><h3>Login :</h3></label>
-            <input type="text" id="login" name="login" required/>
-            <label for="password"><h3>Mot de passe :</h3></label>
-            <input type="password" id="password" name="password" required/>
-            <label for="confpassword"><h3>Confirmer le mot de passe :</h3></label>
-            <input type="password" id="confpassword" name="confpassword" required/>
-            <input type="submit" value="Inscription" name="validinsc"/>
-        <?php
-            if(isset($msg_error))
-                {
-        ?>
-                    <p class="msg_error">
-        <?php
-                    echo $msg_error;
-        ?>
-                    </p>
-        <?php
-                }
-        ?>
-        </form>
+        <section class="formulaire">
+              <form action="inscription.php" method="POST" id="form_inscription">
+                <label for="login"><h3>Login :</h3></label>
+                <input type="text" id="login" name="login" required/>
+                <label for="password"><h3>Mot de passe :</h3></label>
+                <input type="password" id="password" name="password" required/>
+                <label for="confpassword"><h3>Confirmer le mot de passe :</h3></label>
+                <input type="password" id="confpassword" name="confpassword" required/>
+                <input type="submit" value="Inscription" name="validinsc"/>
+            <?php
+                if(isset($msg_error))
+                    {
+            ?>
+                        <p class="msg_error">
+            <?php
+                        echo $msg_error;
+            ?>
+                        </p>
+            <?php
+                    }
+            ?>
+            </form>
+        </section>
+      
     </main>
 
     <footer>

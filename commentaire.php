@@ -13,14 +13,17 @@
 
     <main>
         <h1>Donne ton avis, même si on s'en fou.</h1>
-        <form action="commentaire.php" method="POST" class="form_">
-            <label for="com"><h3>Commentaire :</h3></label>
-            <textarea rows="5" cols="33" id="com" name="com" required></textarea>
-            <input type="submit" value="Envoyer" name="send_com"/>
-            <?php
-                 include 'include/php_commentaire.php';
-            ?>
-        </form>
+        <section class="formulaire">
+             <form action="commentaire.php" method="POST" id="form_commentaire">
+                <label for="com"><h3>Commentaire :</h3></label>
+                <textarea rows="5" cols="33" id="com" name="com" required></textarea>
+                <input type="submit" value="Envoyer" name="send_com"/>
+                <?php
+                    include 'include/php_commentaire.php';
+                ?>
+            </form>
+        </section>
+       
     </main>
 
     <footer>
