@@ -11,7 +11,6 @@
             $requete_info = "SELECT * FROM utilisateurs WHERE login = '$login'";
             $send_info = mysqli_query($connexionbd , $requete_info);
             $info_user = mysqli_fetch_all($send_info, MYSQLI_ASSOC);
-
             if(!empty($info_user))
                 {
                     if(password_verify($mdp , $info_user[0]["password"]))

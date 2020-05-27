@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    include 'include/php_livre-or.php';
+    
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,9 +12,23 @@
 <body>
     <?php  include 'include/header.php'; ?>
     <main>
-        <!-- Je sais pas encore comment structurer la page -->
-        <!-- Faire différence quand connecté ou pas, pour afficher "poster commentaire" -->
-        <!-- Et laisser les commentaires visibles par tous -->
+        <h1>Espace commentaire</h1>
+        <section id="page_com">
+            <section id="espace_com">
+                <?php include 'include/php_livre-or.php'; ?>
+            </section>
+            <section >
+                <?php
+                    if(isset($_SESSION["login"]))
+                            {
+                ?>
+                                <h2><a href='commentaire.php' id="lien_com">Laisser un commentaire</a></h2>
+                <?php
+                            }
+                ?>
+            </section>
+        </section>
+        
     </main>
 
     <footer>

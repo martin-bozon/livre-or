@@ -63,13 +63,60 @@ main
         justify-content: space-evenly;
         align-items: center;
         background-color: blue;
-        width: 25vw;
+        width: 25%;
         height: 50vh;
     }
 #deco
     {
         display: flex;
         align-items: center;
+    }
+#page_com
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+#lien_com
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        height: 10%;
+        width: 40vw;
+        margin-right: 2vw;
+    }
+#espace_com
+    {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        width: 40vw;
+        border: 1px solid black;
+        box-shadow: 4px 4px 10px black;
+        overflow-y: scroll;
+        margin-left: 2vw;
+        background-color: rgba(255, 255, 255, 0.548);
+    }
+#commentaire
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid black;
+        width: 100%;
+    }
+#commentaire h4
+    {
+        color: rebeccapurple;
+    }
+#commentaire p  
+    {
+        display: flex;
+        flex-direction: column;
     }
 /* FOOTER */
 footer
