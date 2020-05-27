@@ -14,14 +14,30 @@
         <section class="formulaire">
             <form action="profil.php" method="POST" id="form_profil">
                 <label for="login"><h3>Login :</h3></label>
-                <input type="text" id="login" name="login">
-                <label for="old_password"><h3>Ancien mot de passe:</h3></label>
-                <input type="password" id="old_password" name="old_password" required/>
+                <input type="text" id="login" name="login" value="<?php echo $_SESSION['login'];?>">
+                <label for="old_password"><h3>Ancien mot de passe <span class="oblig">*</span></h3></label>
+                <input type="password" id="old_password" name="old_password" /> <!-- Rajouter "required -->                
                 <label for="nw_password"><h3>Nouveau mot de passe: </h3></label>
                 <input type="password" id="nw_password" name="nw_password"/>
                 <label for="conf_nwpassword"><h3>Confirmer mot de passe: </h3></label>
                 <input type="password" id="conf_nwpassword" name="conf_nwpassword"/>         
-                <input type="submit" value="Modifier"/>       
+                <input type="submit" value="Modifier" name="valimodif"/>  
+                <p class="oblig">* Champ obligatoire</p>
+                <?php 
+                    include 'include/php_profil.php';
+                    if(isset($msg_login))
+                        {
+                            echo "<span class='msg'>" . $msg_login . "</span><br/>";
+                        }
+                    if(isset($msg_mdp))
+                        {
+                            echo "<span class='msg'>" . $msg_mdp . "</span><br/>";
+                        }
+                    if(isset($msg_error))
+                        {
+                            echo "<span class='msg'>" . $msg_error . "</span>";
+                        }
+                ?>     
             </form>
         </section>
         

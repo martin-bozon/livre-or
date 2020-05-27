@@ -31,7 +31,7 @@
                         <h1>Bonjour !</h1>
                     </section>
                 <section>
-                    <p><a href="inscription.php">Inscris</a> toi et <a href="connexion.php">connectes</a> pour laisser un commentaire,</p>
+                    <p><a href="inscription.php" class="a_index">Inscris</a> toi et <a href="connexion.php" class="a_index">connectes</a> pour laisser un commentaire,</p>
                     <p>que personne ne lira car on se fou de ton avis.</p>
                 </section>        
                 </main>

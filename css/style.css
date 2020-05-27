@@ -63,6 +63,10 @@ form
         justify-content: space-evenly;
         align-items: center;
     }
+input
+    {
+        text-align: center;
+    }
 .formulaire
     {
         display: flex;
@@ -90,7 +94,7 @@ form
         background-color: rgba(104, 39, 2, 0.411);
         backdrop-filter: blur(4px);
         width: 25%;
-        height: 35vh;
+        height: 40vh;
     }
 #form_commentaire
     {
@@ -154,6 +158,22 @@ form
     {
         display: flex;
         flex-direction: column;
+    }
+.a_index
+    {
+        text-decoration: underline;
+    }
+.a_index:hover
+    {
+        color:rgb(104, 39, 2) ;
+    }
+.msg
+    {
+        color: white;
+    }
+.oblig
+    {
+        color: red;
     }
 /* FOOTER */
 footer
